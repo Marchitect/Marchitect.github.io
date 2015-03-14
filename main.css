@@ -5,3 +5,70 @@ height:420px;
 position:absolute;
 z-index:-2012;
 }
+
+
+/* @ Navigation
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav{
+	float: right;
+	cursor: pointer;
+	background-color: rgba(13, 46, 83, 1);
+}
+
+nav ul{
+	display: inline-block;
+	border-color: rgb(33, 48, 63);
+	border-style: none;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 2em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	font-family: 1.3em 'Joti One', cursive;
+	width: 60px;
+}
+
+nav li{
+	display: inline-block;
+	float: left;
+	width: 10em;
+	font: 1.3em 'Joti One', cursive;
+	/*color: rgb(110, 203, 67);	*/
+	color: white;
+	text-align: center;
+}
+
+nav li:hover{
+	background-color: rgba(13, 46, 120, 1);
+}
+
+nav li ul{
+	width: 100px;
+	display: none;
+	font-family: 1.3em 'Joti One', cursive;
+	position: absolute;
+}
+
+nav li ul li{
+	border-color: red;
+	background-color: rgba(17, 74, 165, .5);
+	cursor: default;
+	width: 7em;
+}
+
+nav li ul li:hover{
+	/*background-color: rgba(255, 255, 255, .5);*/
+	background-color: black;
+	cursor: default;
+}
+
+nav li:hover ul{
+	left: auto;
+	display: block;
+	
+}
+
