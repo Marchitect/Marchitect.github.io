@@ -1,0 +1,7 @@
+{
+  "1": { "Brand":"MITSUBISHI HEAVY INDUSTRIES, LTD.", "Model_No":"SRK20ZMXA-S / SRC20ZMXA-S", "C.Power_Inp_Rated":0.35, "H.Power_Inp_Rated":0.45, "KWH":1881.95, "Cost":564.585},
+  "2": { "Brand":"MITSUBISHI HEAVY INDUSTRIES LTD.", "Model_No":"SRK20ZIX-S", "C.Power_Inp_Rated":0.35, "H.Power_Inp_Rated":0.45, "KWH":1881.95, "Cost":564.585},
+  "3": { "Brand":"MITSUBISHI HEAVY INDUSTRIES LTD.", "Model_No":"SRK20ZJX-S", "C.Power_Inp_Rated":0.35, "H.Power_Inp_Rated":0.45, "KWH":1881.95, "Cost":564.585},
+  "4": { "Brand":"TOSHIBA", "Model_No":"RAS-07PKVP-E/PAVP-E", "C.Power_Inp_Rated":0.355, "H.Power_Inp_Rated":0.44, "KWH":1908.835, "Cost":572.6505},
+  "5": { "Brand":"CARRIER", "Model_No":"50PCH006", "C.Power_Inp_Rated":0.4, "H.Power_Inp_Rated":0.4, "KWH":2150.8, "Cost":645.24}
+}

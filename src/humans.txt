@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+    Eloise Ducky -- Web Developer -- @duckytape
+    Goodjess  -- Chief Map Master  -- @jess_clarke
+    Eviljess  --  Chief Data Herder -- @astarael
+    May   -- PHP Possum & Data Wrangler -- @marchitect
+
+# THANKS
+
+    GovHackTas 2015 Organisers
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    R
+    Python
+    mapbox
+    Atom, sublime
