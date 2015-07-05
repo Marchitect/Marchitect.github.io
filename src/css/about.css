@@ -113,13 +113,25 @@ textarea {
    }
 
    .project {
+     width:100%;
      font-family: helvetica;
      padding-left: 50px;
-
+     right: 0;
+     text-align: center;
    }
 
-   img {
-     align: right;
+  .project .aircondor .condorblue {
+     display: inline-block;
+     vertical-align: middle;
+   }
+   .project td {
+      vertical-align: middle;
+    }
+
+   .project .aircondor {
+   }
+
+   .project .condorblue {
    }
 
    .team {
