@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--references:
+1. http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
+2. The Essential Guide to HTML5: Using Games to learn HTML5 and JavaScript-->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Goal!</title>
+        <style>
+        #tip{
+            visibility: hidden;
+            font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+            color: green;
+        }
+        #subm{
+            visibility: hidden;
+        }
+        </style>
+    </head>
+    <body>
+		<script src="./goalgame.js"></script>
+		<canvas width="512" height="475">Oh no! Seems your browser doesn't support canvas.</canvas>
+        <br />
+        <form name="f" id="f" onSubmit="return change();">
+        Horizontal Velocity <input type="number" name="hv" id="hv" value="0" min="-10" max="10"/>
+        Vertical Velocity <input type="number" name="vv" id="vv" value="0" min="0" max="10"/>
+        <input type="submit" name="submit" id="subm" value="Goal"/>
+        <p id="tip">set your player ready to goal now!</p>
+    </body>
+</html>
