@@ -86,7 +86,7 @@ a:hover{color: rgba(233, 91, 92, 1);}
 .pages{text-align:center;margin:25px 25px 35px;font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif}
 .pages a:hover{color: rgba(233, 91, 92, 1);border-radius:4px}
 .pages>li{margin:0 4px;display:inline; color:rgb(122, 90, 166);}
-.pages>li>a,.pages>li>span{padding:3px 10px;border:1px solid #eee;border-radius:4px}
+.pages>li>a,.pages>li>span{padding:3px 10px;border:1px solid #eee;border-radius:4px; color:rgb(122, 90, 166);}
 .tag{color:#9a505a}.archive{margin:10px}.archive>span{color:#9a505a;margin-right:20px}@media (max-width:800px){.main{width:500px}.header{margin:70px 0 0 -180px}}@media (max-width:600px){.main{width:100%}}
 
 
