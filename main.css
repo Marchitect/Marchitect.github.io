@@ -89,7 +89,7 @@ a{text-decoration:none;color:rgb(85,121,209)}
 a:hover{color: rgba(233, 91, 92, 1);}
 .selected{color:#000}.item{margin:10px 0;padding:1px 0}.little{float:left;margin-right:10px;width:3px;height:30px;border-radius:4px;background:#b9eed0}.date{float:left;color:rgba(251, 122, 155, .5) ;font-size:17px;text-transform:uppercase;font-weight:700;width:140px;padding:16px 0 0}.title{padding:0;margin:0 0 0 140px}
 .title a:hover{padding-bottom:2px;color: rgba(233, 91, 92, 1);}.title h2{font-size:17px;line-height:25px}.footer{border-top:1px double #888;margin-top:20px;text-align:center;color:#555}
-.pages{text-align:center;margin:25px 25px 35px;font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif}
+.pages{text-align:center;margin:25px 25px 35px;font-family:'Joti One',"Lucida Sans Unicode","Lucida Grande",sans-serif}
 .pages a:hover{color: rgba(233, 91, 92, 1);border-radius:4px}
 .pages>li{margin:0 4px;display:inline; color:rgb(122, 90, 166);}
 .pages>li>a,.pages>li>span{padding:3px 10px;border:1px solid #eee;border-radius:4px; color:rgb(122, 90, 166);}
