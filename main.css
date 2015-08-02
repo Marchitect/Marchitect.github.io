@@ -85,7 +85,7 @@ pre.line-numbers>code{position:relative}
 #title{font-size:1.1em; font-family:'Joti One',Verdana;}
 #title:hover{border:0}
 .header{background-color: rgba(164, 164, 164, .7); margin:70px 0 0 -210px;width:140px;float:left;text-align:right;font-family:'Joti One',Verdana,Geneva,sans-serif}
-.header li{font-size: 1.5em; font-family:'Joti One',Verdana; list-style:none; margin:30px 0}
+.header li{font-size: 1.5em; font-family:'Joti One',Verdana; list-style:none; text-transform:uppercase; margin:30px 0}
 .header a{color:rgb(85,121,209)}
 a{text-decoration:none;color:rgb(85,121,209)}
 /*a:hover{border-bottom:1px solid rgb(34,106,169)}*/
