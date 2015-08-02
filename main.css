@@ -84,7 +84,7 @@ pre.line-numbers>code{position:relative}
 .header{background-color: rgba(164, 164, 164, .7); margin:70px 0 0 -210px;width:140px;float:left;text-align:right;font-family:'Joti One',Verdana,Geneva,sans-serif}
 .header li{font-family:'Joti One',Verdana; list-style:none;text-transform:uppercase;margin:30px 0}
 .header a{color:rgb(85,121,209)}
-#navi li{font-family:'Joti One',Verdana; text-align:center;}
+#navi li a{font-family:'Joti One',Verdana;}
 a{text-decoration:none;color:rgb(85,121,209)}
 /*a:hover{border-bottom:1px solid rgb(34,106,169)}*/
 a:hover{color: rgba(233, 91, 92, 1);}
