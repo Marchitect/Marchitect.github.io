@@ -82,7 +82,7 @@ pre.line-numbers>code{position:relative}
 .line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}body{margin:0;font-family:Georgia,serif}.main{margin:0 auto;width:600px;position:relative}#disqus_thread{padding:16px}
 .wrap-header h1{width:100%;height:40px;color:rgb(34,106,169);padding:20px 0 10px;border-bottom:2px dashed #888;margin:0 0 10px;font-family:Verdana,Geneva,sans-serif}#title:hover{border:0}
 .header{background-color: rgb(164, 164, 164); margin:70px 0 0 -210px;width:140px;float:left;text-align:right;font-family:'Joti One',Verdana,Geneva,sans-serif}
-.header li{list-style:none;text-transform:uppercase;margin:30px 0}
+.header li{font-family:'Joti One',Verdana; list-style:none;text-transform:uppercase;margin:30px 0}
 .header a{color:rgb(85,121,209)}
 a{text-decoration:none;color:rgb(85,121,209)}
 /*a:hover{border-bottom:1px solid rgb(34,106,169)}*/
