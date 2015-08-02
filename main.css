@@ -91,7 +91,7 @@ a:hover{color: rgba(233, 91, 92, 1);}
 .title a:hover{padding-bottom:2px;color: rgba(233, 91, 92, 1);}.title h2{font-size:17px;line-height:25px}.footer{border-top:1px double #888;margin-top:20px;text-align:center;color:#555}
 .pages{text-align:center;margin:25px 25px 35px;font-family:'Joti One',"Lucida Sans Unicode","Lucida Grande",sans-serif}
 .pages a:hover{color: rgba(233, 91, 92, 1);border-radius:4px}
-.pages>li{margin:0 4px;display:inline; color:rgb(122, 90, 166);}
+.pages>li{font-family:'Joti One'; text-align:center; margin:0 4px;display:inline; color:rgb(122, 90, 166);}
 .pages>li>a,.pages>li>span{padding:3px 10px;border:1px solid #eee;border-radius:4px; color:rgb(122, 90, 166);}
 .tag{color:#9a505a}.archive{margin:10px}.archive>span{color:#9a505a;margin-right:20px}
 
