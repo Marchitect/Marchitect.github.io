@@ -28,7 +28,7 @@ document.write("<div style='background:url(img/drawing"+erke+".png) no-repeat 90
 <div class="main">
     <div class="header">
     
-        <ul id="navi">
+        <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/#/tags">Tags</a></li>
             <li><a href="/#/archive">Archive</a></li>
@@ -37,7 +37,6 @@ document.write("<div style='background:url(img/drawing"+erke+".png) no-repeat 90
             <!-- <li><a href="http://en.meimay.net/simple" target="_blank">Editor</a></li> -->
         </ul>
     </div>
-    <a id="simple-menu" href="#navi">Toggle menu</a>
     <div class="wrap-header">
         <h1>
             <a href="/" id="title"></a>
@@ -50,13 +49,6 @@ document.write("<div style='background:url(img/drawing"+erke+".png) no-repeat 90
         <p>Engine thanks to <a href="https://github.com/Marchitect/simple">simple</a> by isnowfy</p>
     </div>
 </div>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="jquery.sidr.min.js"></script>
-<script>
-$(document).ready(function() {
-  $('#simple-menu').sidr();
-});
-</script>
 <script src="main.js"></script>
 <script id="itemTemplate" type="text/mustache">
     {{#posts}}
