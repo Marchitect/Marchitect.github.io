@@ -49,6 +49,13 @@ document.write("<div style='background:url(img/drawing"+erke+".png) no-repeat 90
         <p>Engine thanks to <a href="https://github.com/Marchitect/simple">simple</a> by isnowfy</p>
     </div>
 </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="jquery.sidr.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#header').sidr();
+});
+</script>
 <script src="main.js"></script>
 <script id="itemTemplate" type="text/mustache">
     {{#posts}}
