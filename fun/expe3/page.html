@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>A Possibility for Slice of Cheese</title>
+        <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+        <style>
+        a{
+        text-align: center;
+        text-decoration: none;
+        
+        }
+        .half {
+        width: 50%;
+        min-height: 100%;
+        max-height: 100%;
+        float: left;
+        padding: 0;
+        position: relative;
+        cursor: pointer;
+        background-color: rgb(113, 229, 95);
+        overflow: scroll; 
+        }
+        
+        .half:hover img {
+        opacity: 0.5;
+        }
+        
+        .half:hover .text {
+        opacity: 1.0; 
+        }
+        
+        .half img {
+        padding: 0;
+        width: 100%;
+        display: block;
+        opacity: 1;
+        object-fit: cover;
+        }
+        
+        .half img, .text {
+        -webkit-transition: opacity 0.5s ease-out;
+        -moz-transition: opacity 0.5s ease-out;
+        -o-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+        }
+        
+        .text {
+        position: absolute;
+        left: 0;
+        top: 30%;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        opacity: 0;
+        font: bold 60px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+        color: rgb(29, 63, 127);
+        }
+        #junior{
+            background-image: url('yeah.png');
+            background-size: contain;
+        }
+        #senior{
+            background-image: url('yeah.png');
+            background-size: contain;
+        }
+        @media only screen and (max-device-width: 480px) and (orientation: portrait) {
+        /*might will have to make 480*350 size designs to fit mobile display*/
+            .half {
+                height: 50%;
+                min-width: 100%;
+                max-width: 100%;
+            }
+            .half image{
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+    <script type="text/javascript">
+    $(document).ready(function () {	
+    	function randomColor() {
+    		return '#' + Math.random().toString(16).slice(2, 8);
+    	};
+    
+    	$("junior").onload = function () {
+    		$(this).css('background-color', randomColor());
+    		$(this).css('box-shadow', "0 0 8px white");
+    		// $(this).css('z-index', "100000");
+    	});
+    });
+    </script>
+    <div class="half" id="junior">
+        <a href="http://info.meimay.net/"><img src="./junior.png"></a>
+        <!-- background images will be replaced to be custom-made and as large as possible   -->
+        <div class="text">
+            <p>Junior</p>
+        </div>
+    </div>
+    <div class="half" id="senior">
+        <a href="http://sliceofcheese.net/"><img src="./senior.png"></a>
+        <div class="text">
+            <p>Senior</p>
+        </div>
+    </div>
+    </body>
+</html>
