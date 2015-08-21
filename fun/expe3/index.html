@@ -6,12 +6,18 @@
         <title>A Possibility for Slice of Cheese</title>
         <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
         <style>
+   /*   For part of the background image art creation of this website (the background soccer court and the soccer vector), thanks to raw source material from Copyright @ freepik.com
+   */
+        body{
+        background-color: black;
+        }
         a{
         text-align: center;
         text-decoration: none;
         
         }
         .half {
+        z-index: 1;
         width: 50%;
         min-height: 100%;
         max-height: 100%;
@@ -19,12 +25,17 @@
         padding: 0;
         position: relative;
         cursor: pointer;
-        background-color: rgb(113, 229, 95);
+        background-color: black;
         overflow: scroll; 
         }
         
         .half:hover img {
         opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+        filter: alpha(opacity=50);  /* IE 5-7 */
+        -moz-opacity: 0.5;          /* Netscape */
+        -khtml-opacity: 0.5;        /* Safari 1.x */
+        /*opacity: 0.0;*/
         }
         
         .half:hover .text {
@@ -55,53 +66,63 @@
         text-align: center;
         opacity: 0;
         font: bold 60px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-        color: rgb(29, 63, 127);
+        /*color: rgb(29, 63, 127);*/
+        color: white;
         }
-        #junior{
-            background-image: url('yeah.png');
+/*        #junior{
+            background-image: url('junior1.png');
             background-size: contain;
         }
         #senior{
             background-image: url('yeah.png');
             background-size: contain;
+        }*/
+        #info{
+            display: block;
+            /*display: none;*/
+            font: bold 80px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+            color: rgb(237, 209, 85);
+            z-index: 3;
+            margin-top: 10px;
+            margin-left: auto;
+            position: relative;
+            text-align: center;
+            /*background-color: rgb(77, 151, 249);*/
+            background-color: white;
         }
         @media only screen and (max-device-width: 480px) and (orientation: portrait) {
-        /*might will have to make 480*350 size designs to fit mobile display*/
+        /*will make 480*350 size designs to fit mobile display*/
             .half {
                 height: 50%;
                 min-width: 100%;
                 max-width: 100%;
             }
             .half image{
+                display: none;
                 object-fit: cover;
+            }
+            #junior{
+                background-image: url('juniorsmall.png');
+                background-size: contain;
+            }
+            #senior{
+                background-image: url('seniorsmall.png');
+                background-size: contain;
             }
         </style>
     </head>
     <body>
-    <script type="text/javascript">
-    $(document).ready(function () {	
-    	function randomColor() {
-    		return '#' + Math.random().toString(16).slice(2, 8);
-    	};
-    
-    	$("junior").onload = function () {
-    		$(this).css('background-color', randomColor());
-    		$(this).css('box-shadow', "0 0 8px white");
-    		// $(this).css('z-index', "100000");
-    	});
-    });
-    </script>
-    <div class="half" id="junior">
-        <a href="http://info.meimay.net/"><img src="./junior.png"></a>
-        <!-- background images will be replaced to be custom-made and as large as possible   -->
-        <div class="text">
-            <p>Junior</p>
-        </div>
-    </div>
+    <div id="info">Slice of Cheese</div>
     <div class="half" id="senior">
         <a href="http://sliceofcheese.net/"><img src="./senior.png"></a>
         <div class="text">
             <p>Senior</p>
+        </div>
+    </div>
+    <div class="half" id="junior">
+        <a href="http://info.meimay.net/"><img src="./junior.png"></a>
+        <div class="text">
+            <p>Junior</p>
         </div>
     </div>
     </body>
