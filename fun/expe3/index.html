@@ -91,7 +91,6 @@
             background-color: white;
         }
         @media only screen and (max-device-width: 480px) and (orientation: portrait) {
-        /*will make 480*350 size designs to fit mobile display*/
             .half {
                 height: 50%;
                 min-width: 100%;
@@ -99,8 +98,21 @@
             }
             .half image{
                 display: none;
-                object-fit: cover;
+                /*object-fit: cover;*/
             }
+            .text {
+                position: absolute;
+                left: 0;
+                top: 30%;
+                right: 0;
+                bottom: 0;
+                text-align: center;
+                opacity: 0;
+                font: bold 120px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+                /*color: rgb(29, 63, 127);*/
+                color: white;
+            }
+            /*will make 480*350 size designs to fit mobile display*/
             #junior{
                 background-image: url('juniorsmall.png');
                 background-size: contain;
