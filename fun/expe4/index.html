@@ -42,6 +42,7 @@
             position: relative;
             top: auto;
             left: auto;
+            /*try if can fix this on mobile*/
             transition:opacity .2s linear;
             -webkit-transition:opacity .2s linear;
             -moz-transition:opacity .2s linear;
@@ -78,9 +79,19 @@
                 display:block; 
                 width: 100%; 
                 height: 50%; 
+                /*need further test and fix*/
                 min-width:480px;
                 min-height:500px; 
                 float:left;
+            }
+
+            #imgcontainer ul #junior{
+                background: url(juniorsmall1.png) no-repeat;
+                background-size: cover;
+            }
+            #imgcontainer ul #senior {
+                background: url(seniorsmall1.png) no-repeat;
+                background-size: cover;
             }
 
         }
