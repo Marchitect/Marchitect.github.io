@@ -71,15 +71,13 @@
             background-color: white;
             background: url("header.png") no-repeat center;
         }
+        /* for mobile display */
         @media only screen and (max-device-width: 480px) and (orientation: portrait) {
             #imgcontainer a{
                 display:block; 
-                width: 100%; 
-                height: auto; 
-                /*need further test and fix*/
-                min-width:480px;
-                min-height:500px; 
-                max-height: 600px;
+                width: 100%;
+                /*need further test and fix*/ 
+                height: 500px; 
                 float:left;
             }
 
@@ -99,7 +97,7 @@
             #imgcontainer a{
                 height: 900px; 
             }
-
+        }
         </style>
     </head>
     <body>
