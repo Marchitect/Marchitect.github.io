@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="Keywords" content="blog"/>
-    <meta name="Description" content="blog"/>
-    <title>Simple</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <meta name="Keywords" content="Programming IT Computing May XinmeiWang"/>
+    <meta name="Description" content="Xinmei's blog"/>
+    <title>Xinmei's Blog on Github</title>
+    <link rel="shortcut icon" href="http://info.meimay.net/favicon.ico">
+    <meta name="msapplication-config" content="http://blog.conn.cc/css/favicon/browserconfig.xml">
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
+<!--randomised accessed bg pictures-->
+<script language="javascript">
+now = new Date();
+erke = now.getSeconds();
+erke = erke - parseInt(erke/6)*6 + 1;//number of pictures
+</script>
+<script language="javascript">
+document.write("<div style='background:url(img/drawing"+erke+".png) no-repeat 90px 0px;' id=Change></div>")
+</script>
+
+<table width="1000" height="100" border="0" align="center" cellpadding="0" cellspacing="0">
+</table>
+<!--randomised accessed bg pictures-->
+
 <div class="main">
     <div class="header">
-    	<ul id="pages">
-            <li><a href="/">home</a></li>
-            <li><a href="/#/tags">tags</a></li>
-            <li><a href="/#/archive">archive</a></li>
-    	</ul>
+    
+        <ul id="pages">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#/tags">Tags</a></li>
+            <li><a href="/#/archive">Archive</a></li>
+            <li><a href="/fun">Other Fun</li>
+            <li><a href="/about.html">About Me</a></li>
+            <!-- <li><a href="http://en.meimay.net/simple" target="_blank">Editor</a></li> -->
+        </ul>
     </div>
 	<div class="wrap-header">
 	<h1>
@@ -38,14 +57,29 @@
 </div>
 <div class="entry" id="main">
 <!-- content -->
+<ul>
+<li>1. Got your PlayerControl script ready but the game character is not moving? Add the Rigidbody 2D component.
+</li>
 
+<li>2. Need to set up the scene loading sequence? Go to File -> Build Settings
+</li>
+
+<li>3. In ArtRage: to export png images with transparent background, go to canvas settings and set canvas opacity to 0. If you want to draw on canvas after that, need to set the opacity back to 100%.
+</li>
+<li>
+4. If the jump code is not working, it might be because of it is put in the wrong place. Physics based code should be put inside the FixedUpdate() method rather than Update().
+</li>
+<li>
+5. If your character is not falling down although you have a gravity scale not being 0, might want to turn to Animator and turn off 'Apply Root Motion'.
+</li>
+</ul>
 <!-- content end -->
 </div>
 <br>
 <br>
     <div id="disqus_thread"></div>
 	<div class="footer">
-		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+		<p>© Copyright 2013 - 2016 by May Wang</p>
 	</div>
 </div>
 <script src="main.js"></script>
