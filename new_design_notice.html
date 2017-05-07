@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+##As the blog title suggests, I'm working on a new prototype of personal home page design to showcase myself and my work abilities a bit better.
+
+
+###The new prototype will still be made of front-end codes, I'm trying to incorporate (and learn) SASS/LESS and perhaps one or two external JavaScript tools as well. Of course I also mark the source of other people's work in the code where applicable. 
+
+
+###After working full-time as a web developer for more than 8 months I believe this is a good time to enjoy more on the self-learning journey and pick up new web related standards or technologies. We don't always get to learn all the exciting things at work don't we? 
+
+
+###My self-learning goals are: SASS/LESS, front-end 'best' practices, more jQuery stuff, and one JavaScript backend related tool such as JSON or AngularJS (but this always come up with .NET and C# which I don't get to use at all from my current job). 
+
+##I hope to keep a learning log here as well so please stay tuned if you would like!
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<h2 id="astheblogtitlesuggestsimworkingonanewprototypeofpersonalhomepagedesigntoshowcasemyselfandmyworkabilitiesabitbetter">As the blog title suggests, I'm working on a new prototype of personal home page design to showcase myself and my work abilities a bit better.</h2>
+
+<h3 id="thenewprototypewillstillbemadeoffrontendcodesimtryingtoincorporateandlearnsasslessandperhapsoneortwoexternaljavascripttoolsaswellofcourseialsomarkthesourceofotherpeoplesworkinthecodewhereapplicable">The new prototype will still be made of front-end codes, I'm trying to incorporate (and learn) SASS/LESS and perhaps one or two external JavaScript tools as well. Of course I also mark the source of other people's work in the code where applicable.</h3>
+
+<h3 id="afterworkingfulltimeasawebdeveloperformorethan8monthsibelievethisisagoodtimetoenjoymoreontheselflearningjourneyandpickupnewwebrelatedstandardsortechnologieswedontalwaysgettolearnalltheexcitingthingsatworkdontwe">After working full-time as a web developer for more than 8 months I believe this is a good time to enjoy more on the self-learning journey and pick up new web related standards or technologies. We don't always get to learn all the exciting things at work don't we?</h3>
+
+<h3 id="myselflearninggoalsaresasslessfrontendbestpracticesmorejquerystuffandonejavascriptbackendrelatedtoolsuchasjsonorangularjsbutthisalwayscomeupwithnetandcwhichidontgettouseatallfrommycurrentjob">My self-learning goals are: SASS/LESS, front-end 'best' practices, more jQuery stuff, and one JavaScript backend related tool such as JSON or AngularJS (but this always come up with .NET and C# which I don't get to use at all from my current job).</h3>
+
+<h2 id="ihopetokeepalearningloghereaswellsopleasestaytunedifyouwouldlike">I hope to keep a learning log here as well so please stay tuned if you would like!</h2>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "new_design_notice.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
