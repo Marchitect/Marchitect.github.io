@@ -67,12 +67,15 @@ header, nav, #main, footer{
 	min-height: 500px;
 
 }
+#about h2, #about h3{
+	text-shadow: none;
+}
 #about .container{
 	opacity: 0;
 	transition: 0.6s ease-in-out;
 	padding-top: 20%;
-    -webkit-transition-delay: 200ms; /* Safari */
-    transition-delay: 200ms;
+    -webkit-transition-delay: 100ms; /* Safari */
+    transition-delay: 100ms;
 }
 #left{
 	opacity: 1;
