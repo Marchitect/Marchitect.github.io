@@ -71,6 +71,8 @@ header, nav, #main, footer{
 	opacity: 0;
 	transition: 0.6s ease-in-out;
 	padding-top: 20%;
+    -webkit-transition-delay: 2s; /* Safari */
+    transition-delay: 2s;
 }
 #left{
 	opacity: 1;
