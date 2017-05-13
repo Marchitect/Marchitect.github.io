@@ -38,7 +38,7 @@ $(window).scroll(function() {
 
   if ($(this).scrollTop() > $('header').height() - 50){  
       $('#bounceblock1').css(
-		 'width', '10%'
+		 'width', '0%'
 	  );
 
 	  $('#about .container').css({
