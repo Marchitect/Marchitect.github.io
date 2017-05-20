@@ -1,0 +1,11 @@
+/*test.scss*/
+#about{
+	/*background: url(./img/bg1.jpg) no-repeat top center;*/
+	background-color: #FECEA8; 
+	background-size: cover;
+	min-height: 500px;
+
+	h2, h3{
+		text-shadow: none;
+	}
+}
