@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="Keywords" content="blog"/>
-    <meta name="Description" content="blog"/>
-    <title>Simple</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <meta name="Keywords" content="Programming IT Computing May XinmeiWang"/>
+    <meta name="Description" content="Xinmei's blog"/>
+    <title>Xinmei's Blog on Github</title>
+    <link rel="shortcut icon" href="http://info.meimay.net/favicon.ico">
+    <meta name="msapplication-config" content="http://blog.conn.cc/css/favicon/browserconfig.xml">
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
+<!--randomised accessed bg pictures-->
+<script language="javascript">
+now = new Date();
+erke = now.getSeconds();
+erke = erke - parseInt(erke/6)*6 + 1;//number of pictures
+</script>
+<script language="javascript">
+document.write("<div style='background:url(img/drawing"+erke+".png) no-repeat 90px 0px;' id=Change></div>")
+</script>
+
+<table width="1000" height="100" border="0" align="center" cellpadding="0" cellspacing="0">
+</table>
+<!--randomised accessed bg pictures-->
+
 <div class="main">
     <div class="header">
-    	<ul id="pages">
-            <li><a href="/">home</a></li>
-            <li><a href="/#/tags">tags</a></li>
-            <li><a href="/#/archive">archive</a></li>
-    	</ul>
+    
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#/tags">Tags</a></li>
+            <li><a href="/#/archive">Archive</a></li>
+            <li><a href="/fun">Other Fun</li>
+            <li><a href="/about.html">About Me</a></li>
+
+        </ul>
     </div>
 	<div class="wrap-header">
 	<h1>
@@ -68,9 +87,10 @@ I would like to briefly discuss the idea of a 'comfort zone' to live and improve
 <br>
 <br>
     <div id="disqus_thread"></div>
-	<div class="footer">
-		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
-	</div>
+    <div class="footer">
+        <p>© Copyright 2013 - 2017 by Xinmei "May" Wang</p>
+        <p>Engine thanks to <a href="https://github.com/Marchitect/simple">simple</a> by isnowfy</p>
+    </div>
 </div>
 <script src="main.js"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
