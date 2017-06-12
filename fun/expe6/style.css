@@ -146,7 +146,8 @@ nav ul li a{
 	line-height: 37px;
 	text-decoration: none;
 	color: #fff;
-	transition: 0.5s ease-in-out;
+	margin-top: 0px;
+	transition: 300ms all ease-in-out;
 }
 ul.container{
 	padding: 0px;
@@ -156,7 +157,7 @@ nav ul li {
 	align-items: flex-start;
 	padding: 0px 40px;
 	background: #4bb3bb;
-	transition: 0.5s ease-in-out;
+	transition: 300ms all ease-in-out;
 }
 nav ul li:hover {
 	display: flex;
@@ -165,6 +166,7 @@ nav ul li:hover {
 }
 nav ul li:hover a{
 	color: #4E4DD1;
+	margin-top: -6px;
 
 }
 
