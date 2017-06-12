@@ -169,7 +169,29 @@ nav ul li:hover a{
 	margin-top: -6px;
 
 }
-
+nav ul li a::before{
+    position:absolute;
+	background-color: red; 
+	content: '';
+	margin-top:3px;
+	width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: none;
+    margin-left: -15px;
+    transition: 300ms all ease-in;
+}
+nav ul li a:hover::before{
+	display: block;
+    width: 10px;
+    height: 10px;
+    /*z-index: 2;*/
+    animation: bouncing 400ms cubic-bezier(.63,.09,.75,.46) infinite alternate;
+}
+@keyframes bouncing {
+    0%   {background-color: red; margin-top:3px;}
+	100% {background-color: yellow; margin-top:34px;}
+}
 
 
 
