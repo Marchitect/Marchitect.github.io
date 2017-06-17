@@ -49,6 +49,9 @@ h1 a{
 header, nav, #main, footer{
 	width: 100%;
 }
+#main .fbg{
+	height: 100vh;
+}
 @media screen and (min-width: 1025px) {
 	.container{
 		width: 970px;
@@ -86,15 +89,16 @@ header, nav, #main, footer{
 	transition: 0.2s ease-in-out;
 }
 #skills{
-	background: url(./img/bg2.png) no-repeat top left;
-	min-height: 500px;
-
-	/*background-size: ;*/
+	background: url(./img/fbg1.jpg) no-repeat top left;
+	background-size: cover;
+}
+#showroom{
+	background: url(./img/fbg2.png) no-repeat top left;
+	background-size: cover;
 }
 #contact{
-	background: url(./img/bg3.jpg) no-repeat top left;
-	min-height: 500px;
-	/*background-size: ;*/
+	background: url(./img/fbg3.jpg) no-repeat top left;
+	background-size: cover;
 }
 footer{
 	background: transparent;
@@ -134,7 +138,7 @@ nav ul{
 	list-style: none;
 	display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+	justify-content: center;
 	align-items: center;
 	/*text-align: center;*/
 	text-align: justify;
@@ -143,19 +147,18 @@ nav ul{
 nav ul li a{
 	font-family: 'Spirax';
 	font-size: 24px;
-	line-height: 37px;
+	line-height: 40px;
 	text-decoration: none;
 	color: #fff;
 	margin-top: 0px;
 	transition: 300ms all ease-in-out;
+	padding: 0px 20px;
 }
 ul.container{
 	padding: 0px;
 }
 nav ul li {
-	display: flex;
-	align-items: flex-start;
-	padding: 0px 40px;
+	/*padding: 0px 30px;*/
 	background: #4bb3bb;
 	transition: 300ms all ease-in-out;
 }
@@ -196,8 +199,8 @@ nav ul li a:hover::before{
 
 
 @media screen and (max-width: 1024px) {
-	nav ul {
-		/*display: inline-block;*/
+/*	nav ul {
+		display: inline-block;
 		display: none;
 		vertical-align: top;
 		text-align: center;
@@ -217,14 +220,14 @@ nav ul li a:hover::before{
 	}
 	nav {
 		display: block;
-		/*position: relative;*/
+		position: relative;
 	}
 	.menu-button{
 		display: block;
 	}
 	.menu-button:hover{
 
-	}
+	}*/
 
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
