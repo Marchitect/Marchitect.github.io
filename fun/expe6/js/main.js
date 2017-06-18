@@ -1,3 +1,9 @@
+// menu stuff
+$('.menu-button').click(function(){
+    $("nav ul").toggle();
+});
+
+//Xinmei's sticky navigation and About Section Scrolling Effect
 $(window).load(function() {
 
 	var scrollTop = $(window).scrollTop(),
@@ -23,10 +29,6 @@ $('nav').css({
 });
 });
 
-$('.menu-button').click(function(){
-    $("nav ul").toggle();
-});
-
 $(window).scroll(function() {
 
   if ($(this).scrollTop() > $('header').height() ){  
@@ -43,7 +45,7 @@ $(window).scroll(function() {
 
 	  $('#about .container').css({
 	  	'opacity':'1',
-	  	'padding-top':'10%'
+	  	'padding-top':'7%'
 	  });
 	  $('#left').css(
 	  	'opacity','0'

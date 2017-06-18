@@ -10,18 +10,22 @@
 body{
 	font-family: 'Dosis', sans-serif;
 	font-size: 20px;
-
-	color: #FF847C;
-	background: url(./img/fixedbottom.png) no-repeat bottom center #2A363B;
+	color: #fff;
+	/*color: #FF847C;*/
+	/*background: url(./img/fixedbottom.png) no-repeat bottom center #2A363B;*/
+	background-color: #2A363B;
 	background-size: cover;
 	margin: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #000;
 }
 p{
 	font-size: 20px;
 }
 a{
 	cursor: pointer;
-	color: #5792E5;
+	color: #fff;
 }
 a:hover, a:active, a:focus{
 	color: #4E4DD1;
@@ -33,7 +37,9 @@ h1 a{
 	/*color: #FF847C;*/
 }
 #bounceblock1{
-	background: #FF847C;
+	/*background: #FF847C;*/
+	background: url(img/about-bg.jpg) bottom center no-repeat;
+	background-size: cover;
 	position: absolute;
 	width: 100%;
 	/*top: 0px;*/
@@ -65,13 +71,14 @@ header, nav, #main, footer{
 }
 #about{
 	/*background: url(./img/bg1.jpg) no-repeat top center;*/
-	background-color: #FECEA8; 
+	/*background-color: #FECEA8; */
+	background-color: #2A363B;
 	background-size: cover;
 	min-height: 500px;
 
 }
 #about h2, #about h3{
-	text-shadow: none;
+	/*text-shadow: none;*/
 }
 #about .container{
 	opacity: 0;
@@ -129,10 +136,12 @@ h1:hover, h2:hover, h3:hover {
 	display: none;
 }
 nav{
-	background: #CCF3F2;
+	/*background: #CCF3F2;*/
+	background: #000;
 }
 nav .container{
-	background: #4bb3bb;
+	/*background: #4bb3bb;*/
+	background: #000;
 }
 nav ul{
 	list-style: none;
@@ -159,7 +168,8 @@ ul.container{
 }
 nav ul li {
 	/*padding: 0px 30px;*/
-	background: #4bb3bb;
+	/*background: #4bb3bb;*/
+	background: #000;
 	transition: 300ms all ease-in-out;
 }
 nav ul li:hover {
