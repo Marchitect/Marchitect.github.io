@@ -61,22 +61,28 @@
     			
     	   </div>
     	</div> -->
-    	<div id="skills">
+    	<div id="skills" class="sr-block">
     		<div class="container fbg">
     			<h2>My Skills</h2>
     			<h3>This section is reserved</h3>
                 <p>I love problem solving & generating new ideas, but I am also interested in a range of other creative activities, such as electronic music composition, marketing & design, cooking, doodling and writing, whenever I find time & peace. </p>
                 <p>I enjoy learning from all sorts of sources and I love communication, especially those draw new sparks in my mind and in life. </p>
+                <h4 class="foo">WordPress</h4>
+                <h4 class="foo">HTML</h4> <h4 class="foo">CSS</h4>
+                <h4 class="foo">JavaScript</h4> <h4 class="foo">jQuery</h4>
+                <h4 class="foo">PHP</h4> <h4 class="foo">SQL</h4>
+                <h4 class="foo">OpenCart</h4>
+                <h4 class="foo">SEO</h4>
     		</div>
     	</div>
-    	<div id="showroom">
+    	<div id="showroom" class="sr-block">
     		<div class="container fbg">
     			<h2>Showroom</h2>
     			<h3>This section is reserved</h3>
                 <p></p>
     		</div>
     	</div>
-    	<div id="contact">
+    	<div id="contact" class="sr-block">
     		<div class="container fbg">
     			<h2>Contact Me</h2>
     			<h3>This section is reserved</h3>
@@ -91,6 +97,12 @@
     		</div>
     	</div>
     </footer>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script type="text/javascript">
+window.sr = ScrollReveal({ reset: true }, {delay: 100});
+    sr.reveal('.sr-block .container', { duration: 1000 }, {distance: '50vh'});
+    sr.reveal('.foo', { duration: 2000 }, {distance: '20vh'});
+</script>
 </body>
 
 </html>

@@ -20,6 +20,17 @@ body{
 h1, h2, h3, h4, h5, h6{
 	color: #000;
 }
+#skills h4{
+	padding: 15px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 15px 5vh;
+	border-bottom: 5px solid #ccc;
+	width: 150px;
+	text-align: center;
+	display: inline-block;
+	float: left;
+}
 p{
 	font-size: 20px;
 }
@@ -109,6 +120,7 @@ header, nav, #main, footer{
 }
 footer{
 	background: transparent;
+	text-align: center;
 }
 h2{
 	font-size: 30px;
@@ -121,14 +133,14 @@ h1,h2,h3{
 	font-family: 'Lobster';
 
 	/*text glow effect*/
-	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #FF847C , 0 0 70px #FF847C , 0 0 80px #FF847C , 0 0 100px #FF847C;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px #FF847C, 0 0 30px rgba(255,255,255,1) , 0 0 40px #FF847C;
 	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 	-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 h1:hover, h2:hover, h3:hover {
-  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #E84A5F , 0 0 70px #E84A5F , 0 0 80px #E84A5F , 0 0 100px #E84A5F;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px yellow , 0 0 30px rgba(255,255,255,1) , 0 0 40px yellow, 0 0 50px rgba(255,255,255,1) , 0 0 60px yellow, 0 0 70px rgba(255,255,255,1) , 0 0 80px yellow;
 }
 .site-title h1{
 	font-family: 'Spirax', cursive;
