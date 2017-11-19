@@ -1,0 +1,11 @@
+h1{
+	font-family: Arial;
+	font-size: 56px;
+	padding: 5px 15px;
+	margin: 0;
+	background: linear-gradient(to bottom,
+	white 0%,
+	white 62%,
+	#333 62,
+	#777 100%);
+}

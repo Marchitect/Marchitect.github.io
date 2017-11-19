@@ -1,3 +1,5 @@
+// slick slider
+
 // menu stuff
 $('.menu-button').click(function(){
     $("nav ul").toggle();

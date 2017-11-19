@@ -85,7 +85,7 @@ header, nav, #main, footer{
 	/*background-color: #FECEA8; */
 	background-color: #2A363B;
 	background-size: cover;
-	min-height: 500px;
+	height: 100vh;
 
 }
 #about h2, #about h3{
@@ -114,6 +114,47 @@ header, nav, #main, footer{
 	background: url(./img/fbg2.png) no-repeat top left;
 	background-size: cover;
 }
+.svg{
+	width: 100%;
+}
+/*example svg starts here*/
+/* -------------------------------- 
+ 
+Manage colors
+ 
+-------------------------------- */
+.cd-stroke {
+  fill: none;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+ 
+.cd-stroke-color-1 {
+  stroke: #223443;
+  fill: #f8f8f8;
+}
+.cd-stroke-color-1#floor {
+  fill: none;
+}
+ 
+.cd-stroke-color-2 {
+  stroke: #D7DCE0;
+}
+ 
+.cd-stroke-color-3 {
+  stroke: #A84D54;
+}
+ 
+.cd-fill-color-1 {
+  fill: #223443;
+}
+ 
+.cd-pointer {
+  fill: #FFFFFF;
+  opacity: 0;
+}
+/*example svg ends here*/
+
 #contact{
 	background: url(./img/fbg3.jpg) no-repeat top left;
 	background-size: cover;

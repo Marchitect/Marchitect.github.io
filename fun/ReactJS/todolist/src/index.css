@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 15px;
+	font-family: sans-serif;
+	background: #87cefa;
+}
+#container{
+	display: flex;
+	justify-content: center;
+	/*optional*/
+	/*align-items: center;*/
+}
+h1{
+	color: #fff;
+	text-align: center;
+}
