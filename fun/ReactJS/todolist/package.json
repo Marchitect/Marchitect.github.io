@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://marchitect.github.io/fun/ReactJS/todolist/build",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "jsonfile": "^4.0.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
@@ -11,6 +12,8 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
